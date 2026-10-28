@@ -1,0 +1,31 @@
+Package: multipathaic
+Type: Package
+Title: Multi-Path Stepwise Selection with AIC
+Version: 0.1.3
+Authors@R: c(
+    person("Michael", "Obuobi", email = "obuobimichael25@gmail.com", role = c("aut", "cre")))
+Description: Implements a multi-path forward selection algorithm using the Akaike 
+    Information Criterion (AIC) for both linear (Gaussian) and logistic (binomial) 
+    regression models. Unlike traditional stepwise methods that follow a single path, 
+    this approach explores multiple competitive model paths simultaneously by retaining 
+    near-optimal models at each step. The package includes stability estimation via 
+    bootstrap resampling and identifies plausible models based on AIC tolerance and 
+    variable stability thresholds. The information criterion is described by
+    Akaike (1974) <doi:10.1109/TAC.1974.1100705>, and bootstrap resampling
+    by Efron (1979) <doi:10.1214/aos/1176344552>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: stats, utils
+Suggests: lars, knitr, rmarkdown, shiny, shinydashboard, plotly, DT,
+        ggplot2, readxl, htmltools, kableExtra
+VignetteBuilder: knitr
+URL: https://github.com/mobuobi/multipathaic
+BugReports: https://github.com/mobuobi/multipathaic/issues
+NeedsCompilation: no
+Packaged: 2026-10-18 15:04:53 UTC; michael
+Author: Michael Obuobi [aut, cre]
+Maintainer: Michael Obuobi <obuobimichael25@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-28 11:50:02 UTC
